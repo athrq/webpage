@@ -1,0 +1,13 @@
+# section needed
+ - Home
+ - About
+ - Work
+ - Contact
+
+# requirement
+ - create a responsive web page using bootstrap gridding system and media query
+ - use bootstrap components (min 3 components)
+ - use jquery to manipulate DOM (min 1 jquery animation)
+ - create animation using keyframe (min 1 animation)
+ - use css filter (min 1 usage)
+ - host the web page using github pages
