@@ -21,7 +21,37 @@ body {
 .mb-10 {
      margin-bottom: 100px;
 }
+.mt-10{
+     margin-top: 100px;
+}
 .btn:hover{
      background: #444;
      color: var(--txt-color);
 }
+
+#work-img{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-template-areas: 'work-1 work-2' 'work-3 work-3';
+     gap: 5px;
+}
+#work-img img{
+     width: 100%;
+     filter: brightness(100%);
+     transition: 0.3s;
+}
+#work-img img:hover{
+     filter: brightness(50%);
+}
+
+#work-1{
+     grid-area: work-1;
+}
+#work-2{
+     grid-area: work-2;
+}
+#work-3{
+     grid-area: work-3;
+}
+
+@media 

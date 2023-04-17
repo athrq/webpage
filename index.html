@@ -14,7 +14,7 @@
           <link rel="stylesheet" href="styling/style.css" />
      </head>
      <body>
-          <header class="position-sticky mb-10">
+          <header class="fixed-top mb-10">
                <nav class="navbar navbar-expand-lg shadow-sm border-botton">
                     <div class="container ml-auto">
                          <h1 class="navbar-brand fw bold fs-4" href="#">
@@ -65,11 +65,11 @@
           <!-- home -->
           <section
                id="about"
-               class="row d-flex align-items-center container m-auto"
+               class="row d-flex align-items-center container m-auto my-5 pt-5 pb-3"
           >
-               <div class="col-8">
+               <div class="col-8 col-md-5 col-12">
                     <h4 class="text-light fs-4">Hello My Name Is</h4>
-                    <h1 class="fw bold fs-1 text-light ">Daan Bintang</h1>
+                    <h1 class="fw bold fs-1 text-light">Daan Bintang</h1>
                     <p class="text-secondary fs-6 py-3">
                          <em
                               >Lorem, ipsum dolor sit amet consectetur
@@ -80,14 +80,227 @@
                     </p>
                     <button class="btn btn-light">More Info</button>
                </div>
-               <div class="col-4">
+               <div class="col-4 md-d-none">
                     <img
                          src="asset/person.png"
                          alt="person"
-                         class="rounded-circle"
+                         class="rounded-circle bg-dark"
                          width="400px"
                          height="400px"
                     />
+               </div>
+          </section>
+
+          <!-- about -->
+          <section id="about" class="container py-5">
+               <h1
+                    class="fs-1 text-light fw-bold bg-dark text-center rounded-pill mt-5 mb-3"
+               >
+                    About
+               </h1>
+               <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                         <h2 class="accordion-header">
+                              <button
+                                   class="accordion-button bg-secondary text-light"
+                                   type="button"
+                                   data-bs-toggle="collapse"
+                                   data-bs-target="#collapseOne"
+                                   aria-expanded="true"
+                                   aria-controls="collapseOne"
+                              >
+                                   Software Engineer
+                              </button>
+                         </h2>
+                         <div
+                              id="collapseOne"
+                              class="accordion-collapse collapse show"
+                              data-bs-parent="#accordionExample"
+                         >
+                              <div class="accordion-body bg-dark text-light">
+                                   <strong
+                                        >This is the first item's accordion
+                                        body.</strong
+                                   >
+                                   It is shown by default, until the collapse
+                                   plugin adds the appropriate classes that we
+                                   use to style each element. These classes
+                                   control the overall appearance, as well as
+                                   the showing and hiding via CSS transitions.
+                                   You can modify any of this with custom CSS or
+                                   overriding our default variables. It's also
+                                   worth noting that just about any HTML can go
+                                   within the <code>.accordion-body</code>,
+                                   though the transition does limit overflow.
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="accordion-item">
+                         <h2 class="accordion-header">
+                              <button
+                                   class="accordion-button bg-secondary text-light"
+                                   type="button"
+                                   data-bs-toggle="collapse"
+                                   data-bs-target="#collapseOne"
+                                   aria-expanded="true"
+                                   aria-controls="collapseOne"
+                              >
+                                   Software Engineer
+                              </button>
+                         </h2>
+                         <div
+                              id="collapseOne"
+                              class="accordion-collapse collapse show"
+                              data-bs-parent="#accordionExample"
+                         >
+                              <div class="accordion-body bg-dark text-light">
+                                   <strong
+                                        >This is the first item's accordion
+                                        body.</strong
+                                   >
+                                   It is shown by default, until the collapse
+                                   plugin adds the appropriate classes that we
+                                   use to style each element. These classes
+                                   control the overall appearance, as well as
+                                   the showing and hiding via CSS transitions.
+                                   You can modify any of this with custom CSS or
+                                   overriding our default variables. It's also
+                                   worth noting that just about any HTML can go
+                                   within the <code>.accordion-body</code>,
+                                   though the transition does limit overflow.
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="accordion-item">
+                         <h2 class="accordion-header">
+                              <button
+                                   class="accordion-button bg-secondary text-light"
+                                   type="button"
+                                   data-bs-toggle="collapse"
+                                   data-bs-target="#collapseOne"
+                                   aria-expanded="true"
+                                   aria-controls="collapseOne"
+                              >
+                                   Software Engineer
+                              </button>
+                         </h2>
+                         <div
+                              id="collapseOne"
+                              class="accordion-collapse collapse show"
+                              data-bs-parent="#accordionExample"
+                         >
+                              <div class="accordion-body bg-dark text-light">
+                                   <strong
+                                        >This is the first item's accordion
+                                        body.</strong
+                                   >
+                                   It is shown by default, until the collapse
+                                   plugin adds the appropriate classes that we
+                                   use to style each element. These classes
+                                   control the overall appearance, as well as
+                                   the showing and hiding via CSS transitions.
+                                   You can modify any of this with custom CSS or
+                                   overriding our default variables. It's also
+                                   worth noting that just about any HTML can go
+                                   within the <code>.accordion-body</code>,
+                                   though the transition does limit overflow.
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+
+          <!-- work -->
+          <section id="work">
+               <h1 class="text-light text-center my-5">work</h1>
+               <div class="row d-flex align-items-center container m-auto">
+                    <div class="col text-light">
+                         <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Deleniti, ad. Omnis itaque in repellendus
+                              amet voluptatem cumque exercitationem eius ex
+                              dolorum corrupti, autem veritatis, praesentium
+                              ducimus nesciunt illo. Error, labore.
+                         </p>
+                    </div>
+                    <div id="work-img" class="col">
+                         <img src="asset/work-1.png" alt="work-1" id="work-1" />
+                         <img
+                              src="asset/work-2.png"
+                              alt="work-2"
+                              id="workd-2"
+                         />
+                         <img src="asset/work-3.png" alt="work-3" id="work-3" />
+                    </div>
+               </div>
+          </section>
+
+          <!-- contact -->
+          <section id="contact" class="my-5 pt-5 container">
+               <h1 class="text-light text-center pb-5">contact</h1>
+               <div class="row d-flex align-items-center">
+                    <div class="col text-light">
+                         <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Perspiciatis aspernatur mollitia ab minima
+                              corporis voluptatem harum? Numquam voluptatem
+                              dolores odit facere saepe, maiores fugiat
+                              doloribus neque pariatur. Fugiat, magni inventore!
+                         </p>
+                    </div>
+                    <div class="col">
+                         <form>
+                              <div class="mb-3">
+                                   <label
+                                        for="exampleInputEmail1"
+                                        class="form-label text-light"
+                                        >Email address</label
+                                   >
+                                   <input
+                                        type="email"
+                                        class="form-control"
+                                        id="exampleInputEmail1"
+                                        aria-describedby="emailHelp"
+                                   />
+                                   <div
+                                        id="emailHelp"
+                                        class="form-text text-light"
+                                   >
+                                        We'll never share your email with anyone
+                                        else.
+                                   </div>
+                              </div>
+                              <div class="mb-3">
+                                   <label
+                                        for="exampleInputPassword1"
+                                        class="form-label text-light"
+                                        >Password</label
+                                   >
+                                   <input
+                                        type="password"
+                                        class="form-control"
+                                        id="exampleInputPassword1"
+                                   />
+                              </div>
+                              <div class="mb-3 form-check">
+                                   <input
+                                        type="checkbox"
+                                        class="form-check-input"
+                                        id="exampleCheck1"
+                                   />
+                                   <label
+                                        class="form-check-label text-light"
+                                        for="exampleCheck1"
+                                        >Check me out</label
+                                   >
+                              </div>
+                              <button type="submit" class="btn btn-light">
+                                   Submit
+                              </button>
+                         </form>
+                    </div>
                </div>
           </section>
 
