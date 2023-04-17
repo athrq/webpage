@@ -12,11 +12,9 @@ body {
 .navbar {
      background: var(--txt-color);
 }
-#hero {
-     background-image: url(../asset/bg-1.jpg);
-}
-.person-img img{
+.person-img .col-12 img{
      border: 5px solid white;
+     width: 100%;
 }
 .mb-10 {
      margin-bottom: 100px;
@@ -53,5 +51,3 @@ body {
 #work-3{
      grid-area: work-3;
 }
-
-@media 
