@@ -11,15 +11,15 @@
                integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
                crossorigin="anonymous"
           />
-          <link rel="stylesheet" href="style.css" />
+          <link rel="stylesheet" href="styling/style.css" />
      </head>
      <body>
-          <header>
+          <header class="position-sticky mb-10">
                <nav class="navbar navbar-expand-lg shadow-sm border-botton">
                     <div class="container ml-auto">
-                         <a class="navbar-brand fw bold fs-4" href="#"
-                              >daanbintang</a
-                         >
+                         <h1 class="navbar-brand fw bold fs-4" href="#">
+                              daanbintang
+                         </h1>
                          <button
                               class="navbar-toggler"
                               type="button"
@@ -32,22 +32,29 @@
                               <span class="navbar-toggler-icon"></span>
                          </button>
                          <div class="collapse navbar-collapse" id="navbarNav">
-                              <ul class="navbar-nav ms-auto">
+                              <ul class="navbar-nav ms-auto d-flex gap-5">
                                    <li class="nav-item">
                                         <a
                                              class="nav-link active"
                                              aria-current="page"
-                                             href="#"
+                                             href="#home"
                                              >Home</a
                                         >
                                    </li>
-                                   <li class="nav-item mx-5">
-                                        <a class="nav-link" href="#"
-                                             >Features</a
+                                   <li class="nav-item">
+                                        <a class="nav-link" href="#about"
+                                             >About</a
                                         >
                                    </li>
                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Pricing</a>
+                                        <a class="nav-link" href="#work"
+                                             >Work</a
+                                        >
+                                   </li>
+                                   <li class="nav-item">
+                                        <a class="nav-link" href="#contact"
+                                             >Contact</a
+                                        >
                                    </li>
                               </ul>
                          </div>
@@ -55,29 +62,41 @@
                </nav>
           </header>
 
-          <main class="container mt-5">
-               <div class="d-flex justify-content-between">
-                    <div class="p-2">
-                         <h1>left</h1>
-                    </div>
-                    <div class="person-img">
-                         <img
-                              src="asset/person.png"
-                              alt="person"
-                              class="rounded-circle"
-                              width="400px"
-                              height="400px"
-                         />
-                    </div>
+          <!-- home -->
+          <section
+               id="about"
+               class="row d-flex align-items-center container m-auto"
+          >
+               <div class="col-8">
+                    <h4 class="text-light fs-4">Hello My Name Is</h4>
+                    <h1 class="fw bold fs-1 text-light ">Daan Bintang</h1>
+                    <p class="text-secondary fs-6 py-3">
+                         <em
+                              >Lorem, ipsum dolor sit amet consectetur
+                              adipisicing elit. Animi ratione dolorem facere,
+                              nam quos quas praesentium est aperiam autem
+                              totam?</em
+                         >
+                    </p>
+                    <button class="btn btn-light">More Info</button>
                </div>
-          </main>
+               <div class="col-4">
+                    <img
+                         src="asset/person.png"
+                         alt="person"
+                         class="rounded-circle"
+                         width="400px"
+                         height="400px"
+                    />
+               </div>
+          </section>
 
           <script
                src="https://code.jquery.com/jquery-3.6.4.min.js"
                integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
                crossorigin="anonymous"
           ></script>
-          <script src="app.js"></script>
+          <script src="styling/app.js"></script>
           <script
                src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
                integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"

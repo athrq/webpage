@@ -1,0 +1,27 @@
+:root {
+     --main-bg-color: #0b0c0d;
+     --txt-color: #f0f0f0;
+}
+*{
+     scroll-behavior: smooth;
+}
+body {
+     background: var(--main-bg-color);
+}
+
+.navbar {
+     background: var(--txt-color);
+}
+#hero {
+     background-image: url(../asset/bg-1.jpg);
+}
+.person-img img{
+     border: 5px solid white;
+}
+.mb-10 {
+     margin-bottom: 100px;
+}
+.btn:hover{
+     background: #444;
+     color: var(--txt-color);
+}
